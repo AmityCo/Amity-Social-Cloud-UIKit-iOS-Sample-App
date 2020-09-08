@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChatViewController.swift
 //  UpstraUIKitiOSSample
 //
 //  Created by Nontapat Siengsanor on 8/9/2563 BE.
@@ -7,14 +7,14 @@
 //
 
 import UIKit
+import UpstraUIKit
 
-class ViewController: UIViewController {
+class ChatViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let chatHomePage = EkoChatHomePageViewController.make()
+        addChildAsSubView(chatHomePage)
     }
 
-
 }
-

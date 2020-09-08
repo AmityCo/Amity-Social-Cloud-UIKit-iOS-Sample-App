@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import UpstraUIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        UpstraUIKit.setup("b3baed5a3dd8f5661933851d505b1688d1088bebbd346a7f")
+        UpstraUIKit.registerDevice(withUserId: "ios0000", displayName: "iOS User")
+        
         return true
     }
 
@@ -31,7 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
 
 }
 
