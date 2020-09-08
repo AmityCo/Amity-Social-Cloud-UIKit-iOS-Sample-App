@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A70B80B2E2CE02FC0B68F85 /* Pods_UpstraUIKitiOSSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AEF08C6EB89958ADF11EFA /* Pods_UpstraUIKitiOSSample.framework */; };
+		0E3E4BE3F943BE1CCBA50BBD /* Pods_UpstraUIKitiOSSample_UpstraUIKitiOSSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CCA5E26978C23C272E5E94 /* Pods_UpstraUIKitiOSSample_UpstraUIKitiOSSampleUITests.framework */; };
 		7297F9F125073109002D03F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7297F9F025073109002D03F0 /* AppDelegate.swift */; };
 		7297F9F325073109002D03F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7297F9F225073109002D03F0 /* SceneDelegate.swift */; };
-		7297F9F525073109002D03F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7297F9F425073109002D03F0 /* ViewController.swift */; };
+		7297F9F525073109002D03F0 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7297F9F425073109002D03F0 /* RootTabBarController.swift */; };
 		7297F9F825073109002D03F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7297F9F625073109002D03F0 /* Main.storyboard */; };
 		7297F9FA2507310B002D03F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7297F9F92507310B002D03F0 /* Assets.xcassets */; };
 		7297F9FD2507310B002D03F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7297F9FB2507310B002D03F0 /* LaunchScreen.storyboard */; };
 		7297FA082507310C002D03F0 /* UpstraUIKitiOSSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7297FA072507310C002D03F0 /* UpstraUIKitiOSSampleTests.swift */; };
 		7297FA132507310C002D03F0 /* UpstraUIKitiOSSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7297FA122507310C002D03F0 /* UpstraUIKitiOSSampleUITests.swift */; };
+		72BDA90925073D41004E3766 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BDA90825073D41004E3766 /* UIViewController+Extension.swift */; };
+		72DA0A292507360300BE8108 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA0A272507360300BE8108 /* ChatViewController.swift */; };
+		72DA0A2C2507363100BE8108 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA0A2B2507363100BE8108 /* CommunityViewController.swift */; };
+		A011F59F16B4AACD08C4AF1A /* Pods_UpstraUIKitiOSSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D32D0E496B0414DD5851BD7 /* Pods_UpstraUIKitiOSSampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D32D0E496B0414DD5851BD7 /* Pods_UpstraUIKitiOSSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpstraUIKitiOSSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		170559351D0EC28082025428 /* Pods-UpstraUIKitiOSSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpstraUIKitiOSSampleTests.release.xcconfig"; path = "Target Support Files/Pods-UpstraUIKitiOSSampleTests/Pods-UpstraUIKitiOSSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		22570E01C84F141176EEEAC1 /* Pods-UpstraUIKitiOSSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpstraUIKitiOSSample.release.xcconfig"; path = "Target Support Files/Pods-UpstraUIKitiOSSample/Pods-UpstraUIKitiOSSample.release.xcconfig"; sourceTree = "<group>"; };
+		25AEF08C6EB89958ADF11EFA /* Pods_UpstraUIKitiOSSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpstraUIKitiOSSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CCA5E26978C23C272E5E94 /* Pods_UpstraUIKitiOSSample_UpstraUIKitiOSSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpstraUIKitiOSSample_UpstraUIKitiOSSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7297F9ED25073109002D03F0 /* UpstraUIKitiOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpstraUIKitiOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7297F9F025073109002D03F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7297F9F225073109002D03F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7297F9F425073109002D03F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7297F9F425073109002D03F0 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		7297F9F725073109002D03F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7297F9F92507310B002D03F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7297F9FC2507310B002D03F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,13 @@
 		7297FA0E2507310C002D03F0 /* UpstraUIKitiOSSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpstraUIKitiOSSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7297FA122507310C002D03F0 /* UpstraUIKitiOSSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpstraUIKitiOSSampleUITests.swift; sourceTree = "<group>"; };
 		7297FA142507310C002D03F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72BDA90825073D41004E3766 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		72DA0A272507360300BE8108 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		72DA0A2B2507363100BE8108 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
+		AC75A926F5B6B9F39719B773 /* Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests/Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B1BB37205BDA4723985CD082 /* Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests/Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCBE9E6CE4FB00C93E6EA70F /* Pods-UpstraUIKitiOSSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpstraUIKitiOSSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-UpstraUIKitiOSSampleTests/Pods-UpstraUIKitiOSSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB362E4C5804E2144E3F31C5 /* Pods-UpstraUIKitiOSSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpstraUIKitiOSSample.debug.xcconfig"; path = "Target Support Files/Pods-UpstraUIKitiOSSample/Pods-UpstraUIKitiOSSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A70B80B2E2CE02FC0B68F85 /* Pods_UpstraUIKitiOSSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A011F59F16B4AACD08C4AF1A /* Pods_UpstraUIKitiOSSampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E3E4BE3F943BE1CCBA50BBD /* Pods_UpstraUIKitiOSSample_UpstraUIKitiOSSampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12C7774EB31A0D93EDF4899E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB362E4C5804E2144E3F31C5 /* Pods-UpstraUIKitiOSSample.debug.xcconfig */,
+				22570E01C84F141176EEEAC1 /* Pods-UpstraUIKitiOSSample.release.xcconfig */,
+				B1BB37205BDA4723985CD082 /* Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests.debug.xcconfig */,
+				AC75A926F5B6B9F39719B773 /* Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests.release.xcconfig */,
+				CCBE9E6CE4FB00C93E6EA70F /* Pods-UpstraUIKitiOSSampleTests.debug.xcconfig */,
+				170559351D0EC28082025428 /* Pods-UpstraUIKitiOSSampleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3A5C7404EBA435260AED2337 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25AEF08C6EB89958ADF11EFA /* Pods_UpstraUIKitiOSSample.framework */,
+				68CCA5E26978C23C272E5E94 /* Pods_UpstraUIKitiOSSample_UpstraUIKitiOSSampleUITests.framework */,
+				0D32D0E496B0414DD5851BD7 /* Pods_UpstraUIKitiOSSampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7297F9E425073109002D03F0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +127,8 @@
 				7297FA062507310C002D03F0 /* UpstraUIKitiOSSampleTests */,
 				7297FA112507310C002D03F0 /* UpstraUIKitiOSSampleUITests */,
 				7297F9EE25073109002D03F0 /* Products */,
+				12C7774EB31A0D93EDF4899E /* Pods */,
+				3A5C7404EBA435260AED2337 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +147,12 @@
 			children = (
 				7297F9F025073109002D03F0 /* AppDelegate.swift */,
 				7297F9F225073109002D03F0 /* SceneDelegate.swift */,
-				7297F9F425073109002D03F0 /* ViewController.swift */,
 				7297F9F625073109002D03F0 /* Main.storyboard */,
 				7297F9F92507310B002D03F0 /* Assets.xcassets */,
 				7297F9FB2507310B002D03F0 /* LaunchScreen.storyboard */,
 				7297F9FE2507310B002D03F0 /* Info.plist */,
+				72DA0A2D250738BC00BE8108 /* ViewControllers */,
+				72BDA90725073D1F004E3766 /* Extension */,
 			);
 			path = UpstraUIKitiOSSample;
 			sourceTree = "<group>";
@@ -128,6 +175,24 @@
 			path = UpstraUIKitiOSSampleUITests;
 			sourceTree = "<group>";
 		};
+		72BDA90725073D1F004E3766 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				72BDA90825073D41004E3766 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		72DA0A2D250738BC00BE8108 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				72DA0A2B2507363100BE8108 /* CommunityViewController.swift */,
+				72DA0A272507360300BE8108 /* ChatViewController.swift */,
+				7297F9F425073109002D03F0 /* RootTabBarController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7297FA172507310C002D03F0 /* Build configuration list for PBXNativeTarget "UpstraUIKitiOSSample" */;
 			buildPhases = (
+				4BF542EF57ED456D5A804086 /* [CP] Check Pods Manifest.lock */,
 				7297F9E925073109002D03F0 /* Sources */,
 				7297F9EA25073109002D03F0 /* Frameworks */,
 				7297F9EB25073109002D03F0 /* Resources */,
+				D055D7F68FD0E5C502D7E3C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7297FA1A2507310C002D03F0 /* Build configuration list for PBXNativeTarget "UpstraUIKitiOSSampleTests" */;
 			buildPhases = (
+				592532A30D8FE24EC46CCACE /* [CP] Check Pods Manifest.lock */,
 				7297F9FF2507310C002D03F0 /* Sources */,
 				7297FA002507310C002D03F0 /* Frameworks */,
 				7297FA012507310C002D03F0 /* Resources */,
@@ -170,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7297FA1D2507310C002D03F0 /* Build configuration list for PBXNativeTarget "UpstraUIKitiOSSampleUITests" */;
 			buildPhases = (
+				102E90D9688EA3A6468A9878 /* [CP] Check Pods Manifest.lock */,
 				7297FA0A2507310C002D03F0 /* Sources */,
 				7297FA0B2507310C002D03F0 /* Frameworks */,
 				7297FA0C2507310C002D03F0 /* Resources */,
+				EC138474371785C7FD7C4A56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,14 +324,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		102E90D9688EA3A6468A9878 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BF542EF57ED456D5A804086 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UpstraUIKitiOSSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		592532A30D8FE24EC46CCACE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UpstraUIKitiOSSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D055D7F68FD0E5C502D7E3C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UpstraUIKitiOSSample/Pods-UpstraUIKitiOSSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UpstraUIKitiOSSample/Pods-UpstraUIKitiOSSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UpstraUIKitiOSSample/Pods-UpstraUIKitiOSSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC138474371785C7FD7C4A56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests/Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests/Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests/Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7297F9E925073109002D03F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7297F9F525073109002D03F0 /* ViewController.swift in Sources */,
+				72BDA90925073D41004E3766 /* UIViewController+Extension.swift in Sources */,
+				7297F9F525073109002D03F0 /* RootTabBarController.swift in Sources */,
 				7297F9F125073109002D03F0 /* AppDelegate.swift in Sources */,
 				7297F9F325073109002D03F0 /* SceneDelegate.swift in Sources */,
+				72DA0A2C2507363100BE8108 /* CommunityViewController.swift in Sources */,
+				72DA0A292507360300BE8108 /* ChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +608,7 @@
 		};
 		7297FA182507310C002D03F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB362E4C5804E2144E3F31C5 /* Pods-UpstraUIKitiOSSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +626,7 @@
 		};
 		7297FA192507310C002D03F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22570E01C84F141176EEEAC1 /* Pods-UpstraUIKitiOSSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +644,7 @@
 		};
 		7297FA1B2507310C002D03F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCBE9E6CE4FB00C93E6EA70F /* Pods-UpstraUIKitiOSSampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +666,7 @@
 		};
 		7297FA1C2507310C002D03F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 170559351D0EC28082025428 /* Pods-UpstraUIKitiOSSampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +688,7 @@
 		};
 		7297FA1E2507310C002D03F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1BB37205BDA4723985CD082 /* Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +708,7 @@
 		};
 		7297FA1F2507310C002D03F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC75A926F5B6B9F39719B773 /* Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
