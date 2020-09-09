@@ -1,16 +1,16 @@
 PODS:
-  - UpstraUIKit (1.0.0)
+  - UpstraUIKit (1.0.1)
 
 DEPENDENCIES:
-  - UpstraUIKit (= 1.0.0)
+  - UpstraUIKit (= 1.0.1)
 
 SPEC REPOS:
   https://github.com/EkoCommunications/EkoMessagingSDKUIKit.git:
     - UpstraUIKit
 
 SPEC CHECKSUMS:
-  UpstraUIKit: e72fbe69f939aa26cda0de6b6902dd052c952de3
+  UpstraUIKit: 9b4d8d8e7f34a1eee8ee2efb7769f74e60205e0c
 
-PODFILE CHECKSUM: 8e3600ce68715148dd6a305211dd7a3601ea3a93
+PODFILE CHECKSUM: ff0086f0edf82a1af52c2a11d9c69a46bc7dc23d
 
 COCOAPODS: 1.9.3
