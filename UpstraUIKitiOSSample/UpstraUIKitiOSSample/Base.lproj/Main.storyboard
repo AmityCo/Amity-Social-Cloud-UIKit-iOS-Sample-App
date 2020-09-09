@@ -7,37 +7,81 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Community-->
+        <!--Settings-->
         <scene sceneID="DGm-jl-UyL">
             <objects>
-                <viewController id="C5o-mu-whV" userLabel="Community" customClass="CommunityViewController" customModule="UpstraUIKitiOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="C5o-mu-whV" userLabel="Settings" customClass="SettingsViewController" customModule="UpstraUIKitiOSSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Ht-le-zgu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfF-NS-q97">
+                                <rect key="frame" x="158" y="367" width="98" height="30"/>
+                                <state key="normal" title="Default Preset"/>
+                                <connections>
+                                    <action selector="defaultPresetTap:" destination="C5o-mu-whV" eventType="touchUpInside" id="yUS-2I-COX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vH0-Xp-hUW">
+                                <rect key="frame" x="151" y="433" width="112" height="30"/>
+                                <state key="normal" title="Custom Preset 1"/>
+                                <connections>
+                                    <action selector="customPreset1Tap:" destination="C5o-mu-whV" eventType="touchUpInside" id="l6B-5k-jkr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pP-w3-U8n">
+                                <rect key="frame" x="149.5" y="499" width="115" height="30"/>
+                                <state key="normal" title="Custom Preset 2"/>
+                                <connections>
+                                    <action selector="customPreset2Tap:" destination="C5o-mu-whV" eventType="touchUpInside" id="xN4-wN-DQP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3pP-w3-U8n" firstAttribute="top" secondItem="vH0-Xp-hUW" secondAttribute="bottom" constant="36" id="3zQ-BX-ZfI"/>
+                            <constraint firstItem="vH0-Xp-hUW" firstAttribute="centerY" secondItem="2Ht-le-zgu" secondAttribute="centerY" id="7SA-Gl-Dye"/>
+                            <constraint firstItem="vH0-Xp-hUW" firstAttribute="centerX" secondItem="2Ht-le-zgu" secondAttribute="centerX" id="JbK-dN-eet"/>
+                            <constraint firstItem="LfF-NS-q97" firstAttribute="centerX" secondItem="2Ht-le-zgu" secondAttribute="centerX" id="UJ0-d8-t5r"/>
+                            <constraint firstItem="3pP-w3-U8n" firstAttribute="centerX" secondItem="2Ht-le-zgu" secondAttribute="centerX" id="tqe-fh-M7C"/>
+                            <constraint firstItem="vH0-Xp-hUW" firstAttribute="top" secondItem="LfF-NS-q97" secondAttribute="bottom" constant="36" id="vfb-ZF-OsN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YuL-fS-oVW"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Community" image="icon_tabbar_community" id="7lf-K4-h5l"/>
+                    <navigationItem key="navigationItem" id="vcT-ky-SDP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nzl-XY-7gG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1968" y="461"/>
+            <point key="canvasLocation" x="3786.9565217391309" y="460.71428571428567"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="ejM-rg-uUT">
+        <!--Menu Table View Controller-->
+        <scene sceneID="aKv-9v-U3a">
             <objects>
-                <viewController id="ZpD-Ji-i5X" userLabel="Home" customClass="ChatViewController" customModule="UpstraUIKitiOSSample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="boR-d4-fP2">
+                <tableViewController id="mJF-Yj-xCl" customClass="MenuTableViewController" customModule="UpstraUIKitiOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7vy-yq-6gk" customClass="MenuViewController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="pGa-wK-C9a"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Chat" image="icon_tabbar_chat" id="bKv-mN-Fvl"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o2F-oE-hXX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UuB-HI-AgT">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UuB-HI-AgT" id="bi1-Hf-AEW">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mJF-Yj-xCl" id="bHl-rG-1Xo"/>
+                            <outlet property="delegate" destination="mJF-Yj-xCl" id="DJx-fU-HIP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="bA3-3W-669"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cnu-YV-JGI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1968" y="-187"/>
+            <point key="canvasLocation" x="3786.9565217391309" y="-248.4375"/>
         </scene>
         <!--Root Tab Bar Controller-->
         <scene sceneID="Mz8-8d-G81">
@@ -49,17 +93,55 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ZpD-Ji-i5X" kind="relationship" relationship="viewControllers" id="4Bg-bI-COh"/>
-                        <segue destination="C5o-mu-whV" kind="relationship" relationship="viewControllers" id="gwD-ub-UDB"/>
+                        <segue destination="m3t-oa-OWa" kind="relationship" relationship="viewControllers" id="m3W-8V-8Pl"/>
+                        <segue destination="f5l-Lb-7q1" kind="relationship" relationship="viewControllers" id="gwD-ub-UDB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YyN-Eh-9Y2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="136"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="135.9375"/>
+        </scene>
+        <!--Feature Menu-->
+        <scene sceneID="zyx-3u-HU3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m3t-oa-OWa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Feature Menu" image="list.bullet.below.rectangle" catalog="system" id="v0u-Op-dos"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="K6e-QD-dqx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mJF-Yj-xCl" kind="relationship" relationship="rootViewController" id="7Wg-wN-uhx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ap1-Ik-U09" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2876.811594202899" y="-248.4375"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="yom-k2-FEX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f5l-Lb-7q1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="7lf-K4-h5l"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jtT-Lo-UG1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="C5o-mu-whV" kind="relationship" relationship="rootViewController" id="pmd-mG-Kdo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btD-MV-Z5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2876.811594202899" y="460.71428571428567"/>
         </scene>
     </scenes>
     <resources>
-        <image name="icon_tabbar_chat" width="28" height="28"/>
-        <image name="icon_tabbar_community" width="27" height="24"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="list.bullet.below.rectangle" catalog="system" width="128" height="112"/>
     </resources>
 </document>
