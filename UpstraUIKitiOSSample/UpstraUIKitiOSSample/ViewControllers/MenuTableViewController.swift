@@ -73,7 +73,7 @@ class MenuTableViewController: UITableViewController {
     }
     
     private func navigateToChatList() {
-        let viewController = EkoMessageListViewController.make(channelId: "Global Channel")
+        let viewController = EkoMessageListViewController.make(channelId: "android-iOS-conversation")
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
@@ -83,7 +83,7 @@ class MenuTableViewController: UITableViewController {
         settings.register(type: .textIncoming, cell: CustomTextIncomingCell.self)
         settings.register(type: .imageOutgoing, cell: CustomTextIncomingCell.self)
         
-        let viewController = EkoMessageListViewController.make(channelId: "Global Channel", settings: settings)
+        let viewController = EkoMessageListViewController.make(channelId: "android-iOS-conversation", settings: settings)
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
