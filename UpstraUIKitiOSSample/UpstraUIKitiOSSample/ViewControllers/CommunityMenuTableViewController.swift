@@ -1,27 +1,26 @@
 //
-//  MenuTableViewController.swift
+//  CommunityMenuTableViewController.swift
 //  UpstraUIKitiOSSample
 //
-//  Created by Nontapat Siengsanor on 9/9/2563 BE.
+//  Created by Nontapat Siengsanor on 12/11/2563 BE.
 //  Copyright © 2563 Upstra. All rights reserved.
 //
 
 import UIKit
-import EkoChat
 import UpstraUIKit
 
-class MenuTableViewController: UITableViewController {
+class CommunityMenuTableViewController: UITableViewController {
     
     private enum Menu: CaseIterable {
-        case chat
-        case community
+        case newsfeed
+        case globalFeed
         
         var title: String {
             switch self {
-            case .chat:
-                return "Chat"
-            case .community:
-                return "Community"
+            case .newsfeed:
+                return "Newsfeed"
+            case .globalFeed:
+                return "Global Feed"
             }
         }
     }
@@ -49,10 +48,10 @@ class MenuTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch items(at: indexPath) {
-        case .chat:
-            navigateToChat()
-        case .community:
-            navigateToCommunity()
+        case .newsfeed:
+            navigateToNewsFeed()
+        case .globalFeed:
+            navigateToMyFeed()
         }
     }
     
@@ -62,16 +61,18 @@ class MenuTableViewController: UITableViewController {
         return Menu.allCases[indexPath.row]
     }
     
-    private func navigateToChat() {
-        let viewController = ChatMenuTableViewController()
-        viewController.hidesBottomBarWhenPushed = true
+    private func navigateToNewsFeed() {
+        let viewController = EkoCommunityHomePageViewController.make()
         navigationController?.pushViewController(viewController, animated: true)
     }
     
-    private func navigateToCommunity() {
-        let viewController = CommunityMenuTableViewController()
-        viewController.hidesBottomBarWhenPushed = true
+    private func navigateToMyFeed() {
+        let viewController = EkoGlobalFeedViewController.make()
         navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    private func navigateToChatListWithCustomization() {
+        
     }
     
 }

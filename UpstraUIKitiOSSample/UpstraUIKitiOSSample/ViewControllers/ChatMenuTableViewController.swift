@@ -1,8 +1,8 @@
 //
-//  MenuTableViewController.swift
+//  ChatMenuTableViewController.swift
 //  UpstraUIKitiOSSample
 //
-//  Created by Nontapat Siengsanor on 9/9/2563 BE.
+//  Created by Nontapat Siengsanor on 12/11/2563 BE.
 //  Copyright © 2563 Upstra. All rights reserved.
 //
 
@@ -10,18 +10,21 @@ import UIKit
 import EkoChat
 import UpstraUIKit
 
-class MenuTableViewController: UITableViewController {
+class ChatMenuTableViewController: UITableViewController {
     
     private enum Menu: CaseIterable {
-        case chat
-        case community
+        case chatHome
+        case chatList
+        case chatListCustomize
         
         var title: String {
             switch self {
-            case .chat:
-                return "Chat"
-            case .community:
-                return "Community"
+            case .chatHome:
+                return "Chat Home"
+            case .chatList:
+                return "Chat List"
+            case .chatListCustomize:
+                return "Chat List with customization"
             }
         }
     }
@@ -49,10 +52,12 @@ class MenuTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch items(at: indexPath) {
-        case .chat:
-            navigateToChat()
-        case .community:
-            navigateToCommunity()
+        case .chatList:
+            navigateToChatList()
+        case .chatListCustomize:
+            navigateToChatListWithCustomization()
+        case .chatHome:
+            navigateToChatHome()
         }
     }
     
@@ -62,16 +67,31 @@ class MenuTableViewController: UITableViewController {
         return Menu.allCases[indexPath.row]
     }
     
-    private func navigateToChat() {
-        let viewController = ChatMenuTableViewController()
+    private func navigateToChatHome() {
+        let viewController = EkoChatHomePageViewController.make()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    private func navigateToChatList() {
+        let viewController = EkoMessageListViewController.make(channelId: "android-iOS-conversation")
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
     
-    private func navigateToCommunity() {
-        let viewController = CommunityMenuTableViewController()
+    private func navigateToChatListWithCustomization() {
+        let viewController = EkoMessageListViewController.make(channelId: "android-iOS-conversation")
+        viewController.register(type: .textIncoming, cell: CustomTextIncomingCell.self)
+        viewController.register(type: .imageOutgoing, cell: CustomTextIncomingCell.self)
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+}
+
+class CustomTextIncomingCell: UITableViewCell, EkoMessageCellProtocol {
+    
+    func display(message: EkoMessagesModel) {
+        // do somthing
     }
     
 }

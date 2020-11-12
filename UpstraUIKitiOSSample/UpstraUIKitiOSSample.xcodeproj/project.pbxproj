@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0DFE7437CE48BB9CFAD735BF /* Pods_UpstraUIKitiOSSample_UpstraUIKitiOSSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED64EE9C0A4D743346687C0 /* Pods_UpstraUIKitiOSSample_UpstraUIKitiOSSampleUITests.framework */; };
 		48717D97FE88C17FD2BEE790 /* Pods_UpstraUIKitiOSSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6223C33FF09456521A73B2 /* Pods_UpstraUIKitiOSSample.framework */; };
+		72245FC2255D786A00548CB2 /* CommunityMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72245FC1255D786A00548CB2 /* CommunityMenuTableViewController.swift */; };
+		72245FC4255D788500548CB2 /* ChatMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72245FC3255D788500548CB2 /* ChatMenuTableViewController.swift */; };
 		7297F9F125073109002D03F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7297F9F025073109002D03F0 /* AppDelegate.swift */; };
 		7297F9F325073109002D03F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7297F9F225073109002D03F0 /* SceneDelegate.swift */; };
 		7297F9F825073109002D03F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7297F9F625073109002D03F0 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		1D38E05A8496DB3FC2664CCE /* Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests/Pods-UpstraUIKitiOSSample-UpstraUIKitiOSSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		229BAFCDB1C9313A6D62D053 /* Pods-UpstraUIKitiOSSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpstraUIKitiOSSample.release.xcconfig"; path = "Target Support Files/Pods-UpstraUIKitiOSSample/Pods-UpstraUIKitiOSSample.release.xcconfig"; sourceTree = "<group>"; };
 		6572BE47E86C758840819117 /* Pods-UpstraUIKitiOSSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpstraUIKitiOSSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-UpstraUIKitiOSSampleTests/Pods-UpstraUIKitiOSSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		72245FC1255D786A00548CB2 /* CommunityMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMenuTableViewController.swift; sourceTree = "<group>"; };
+		72245FC3255D788500548CB2 /* ChatMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMenuTableViewController.swift; sourceTree = "<group>"; };
 		7297F9ED25073109002D03F0 /* UpstraUIKitiOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpstraUIKitiOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7297F9F025073109002D03F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7297F9F225073109002D03F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 		72DA0A2D250738BC00BE8108 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				72245FC3255D788500548CB2 /* ChatMenuTableViewController.swift */,
+				72245FC1255D786A00548CB2 /* CommunityMenuTableViewController.swift */,
 				72BDA9182507FC65004E3766 /* MenuTableViewController.swift */,
 				72DA0A2B2507363100BE8108 /* SettingsViewController.swift */,
 			);
@@ -418,8 +424,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72245FC4255D788500548CB2 /* ChatMenuTableViewController.swift in Sources */,
 				72BDA9192507FC65004E3766 /* MenuTableViewController.swift in Sources */,
 				7297F9F125073109002D03F0 /* AppDelegate.swift in Sources */,
+				72245FC2255D786A00548CB2 /* CommunityMenuTableViewController.swift in Sources */,
 				7297F9F325073109002D03F0 /* SceneDelegate.swift in Sources */,
 				72DA0A2C2507363100BE8108 /* SettingsViewController.swift in Sources */,
 			);
