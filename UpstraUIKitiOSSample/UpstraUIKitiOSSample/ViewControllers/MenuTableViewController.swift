@@ -79,11 +79,9 @@ class MenuTableViewController: UITableViewController {
     }
     
     private func navigateToChatListWithCustomization() {
-        var settings = EkoMessageListSettings()
-        settings.register(type: .textIncoming, cell: CustomTextIncomingCell.self)
-        settings.register(type: .imageOutgoing, cell: CustomTextIncomingCell.self)
-        
-        let viewController = EkoMessageListViewController.make(channelId: "android-iOS-conversation", settings: settings)
+        let viewController = EkoMessageListViewController.make(channelId: "android-iOS-conversation")
+        viewController.register(type: .textIncoming, cell: CustomTextIncomingCell.self)
+        viewController.register(type: .imageOutgoing, cell: CustomTextIncomingCell.self)
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
@@ -92,8 +90,8 @@ class MenuTableViewController: UITableViewController {
 
 class CustomTextIncomingCell: UITableViewCell, EkoMessageCellProtocol {
     
-    func display(message: EkoMessagesModel, client: EkoClient) {
-        
+    func display(message: EkoMessagesModel) {
+        // do somthing
     }
     
 }
