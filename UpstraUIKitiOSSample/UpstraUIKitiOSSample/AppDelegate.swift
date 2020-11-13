@@ -13,7 +13,7 @@ import UpstraUIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        UpstraUIKit.setup("b3baef0b6cdfa4361a348a1f5a011688d10889e4bc306d7d")
+        UpstraUIKit.setup("b3bab95b3edbf9661a368518045b4481d35cdfeaec35677d")
         UpstraUIKit.registerDevice(withUserId: "ios0000", displayName: "iOS User")
         
         return true
