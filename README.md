@@ -5,8 +5,8 @@ Welcome to UpstraUIKitiOSSample repository. This will provide you how to integra
 ## Getting Started
 
 1. [Download](https://developer.apple.com/xcode/download/) the Xcode 11 release.
-1. Clone this repository.
-1. Run `pod install` to install dependencies.
+2. Clone this repository.
+3. Run `pod install` after cloned this repo to install dependencies or `pod install --repo-update` in case to update current dependencies.
 
 *For carthage, please follow [this](https://app.gitbook.com/@eko/s/sdk/uikit/uikit/get-started) instruction.*
 
