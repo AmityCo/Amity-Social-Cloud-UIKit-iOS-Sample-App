@@ -12,15 +12,21 @@ import UpstraUIKit
 class CommunityMenuTableViewController: UITableViewController {
     
     private enum Menu: CaseIterable {
+        case home
         case newsfeed
         case globalFeed
+        case myFeed
         
         var title: String {
             switch self {
+            case .home:
+                return "Home"
             case .newsfeed:
                 return "Newsfeed"
             case .globalFeed:
                 return "Global Feed"
+            case .myFeed:
+                return "My Feed"
             }
         }
     }
@@ -48,9 +54,13 @@ class CommunityMenuTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch items(at: indexPath) {
+        case .home:
+            navigateToHome()
         case .newsfeed:
             navigateToNewsFeed()
         case .globalFeed:
+            navigateToGlobalFeed()
+        case .myFeed:
             navigateToMyFeed()
         }
     }
@@ -61,18 +71,24 @@ class CommunityMenuTableViewController: UITableViewController {
         return Menu.allCases[indexPath.row]
     }
     
-    private func navigateToNewsFeed() {
+    private func navigateToHome() {
         let viewController = EkoCommunityHomePageViewController.make()
         navigationController?.pushViewController(viewController, animated: true)
     }
     
-    private func navigateToMyFeed() {
+    private func navigateToNewsFeed() {
+        let viewController = EkoNewsfeedViewController.make()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    private func navigateToGlobalFeed() {
         let viewController = EkoGlobalFeedViewController.make()
         navigationController?.pushViewController(viewController, animated: true)
     }
     
-    private func navigateToChatListWithCustomization() {
-        
+    private func navigateToMyFeed() {
+        let viewController = EkoUserFeedViewController.makeMyFeed()
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
 }
