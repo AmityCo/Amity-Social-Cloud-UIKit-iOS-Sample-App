@@ -80,18 +80,16 @@ class ChatMenuTableViewController: UITableViewController {
     
     private func navigateToChatListWithCustomization() {
         let viewController = EkoMessageListViewController.make(channelId: "android-iOS-conversation")
-        viewController.register(type: .textIncoming, cell: CustomTextIncomingCell.self)
-        viewController.register(type: .imageOutgoing, cell: CustomTextIncomingCell.self)
+        viewController.dataSource = self
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
-    
 }
 
-class CustomTextIncomingCell: UITableViewCell, EkoMessageCellProtocol {
-    
-    func display(message: EkoMessagesModel) {
-        // do somthing
+extension ChatMenuTableViewController: EkoMessageListDataSource {
+    func cellForMessageTypes() -> [EkoMessageTypes : EkoMessageCellProtocol.Type] {
+        return [
+            .textOutgoing: CustomMessageTextIncomingTableViewCell.self
+        ]
     }
-    
 }
