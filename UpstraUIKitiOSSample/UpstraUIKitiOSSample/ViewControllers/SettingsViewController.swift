@@ -38,17 +38,17 @@ class SettingsViewController: UIViewController {
     
     @IBAction func defaultPresetTap(_ sender: Any) {
         let preset = Preset.defaultPreset
-        UpstraUIKit.set(theme: preset.theme)
+        UpstraUIKitManager.set(theme: preset.theme)
     }
     
     @IBAction func customPreset1Tap(_ sender: Any) {
         let preset = Preset.customPreset1
-        UpstraUIKit.set(theme: preset.theme)
+        UpstraUIKitManager.set(theme: preset.theme)
     }
     
     @IBAction func customPreset2Tap(_ sender: Any) {
         let preset = Preset.customPreset2
-        UpstraUIKit.set(theme: preset.theme)
+        UpstraUIKitManager.set(theme: preset.theme)
     }
     
 }
