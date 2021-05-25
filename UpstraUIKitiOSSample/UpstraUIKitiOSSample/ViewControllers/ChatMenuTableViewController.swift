@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import EkoChat
-import UpstraUIKit
+import AmitySDK
+import AmityUIKit
 
 class ChatMenuTableViewController: UITableViewController {
     
@@ -68,26 +68,26 @@ class ChatMenuTableViewController: UITableViewController {
     }
     
     private func navigateToChatHome() {
-        let viewController = EkoChatHomePageViewController.make()
+        let viewController = AmityChatHomePageViewController.make()
         navigationController?.pushViewController(viewController, animated: true)
     }
     
     private func navigateToChatList() {
-        let viewController = EkoMessageListViewController.make(channelId: "android-iOS-conversation")
+        let viewController = AmityMessageListViewController.make(channelId: "android-iOS-conversation")
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
     
     private func navigateToChatListWithCustomization() {
-        let viewController = EkoMessageListViewController.make(channelId: "android-iOS-conversation")
+        let viewController = AmityMessageListViewController.make(channelId: "android-iOS-conversation")
         viewController.dataSource = self
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
-extension ChatMenuTableViewController: EkoMessageListDataSource {
-    func cellForMessageTypes() -> [EkoMessageTypes : EkoMessageCellProtocol.Type] {
+extension ChatMenuTableViewController: AmityMessageListDataSource {
+    func cellForMessageTypes() -> [AmityMessageTypes : AmityMessageCellProtocol.Type] {
         return [
             .textOutgoing: CustomMessageTextIncomingTableViewCell.self
         ]

@@ -7,14 +7,14 @@
 //
 
 import UIKit
-import UpstraUIKit
+import AmityUIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        UpstraUIKitManager.setup("b3babb5e32dbf2314935d81e0301438fd85b84b7b2316a2e")
-        UpstraUIKitManager.registerDevice(withUserId: "ios0000", displayName: "iOS User")
+        AmityUIKitManager.setup("b3babb5e32dbf2314935d81e0301438fd85b84b7b2316a2e")
+        AmityUIKitManager.registerDevice(withUserId: "ios0000", displayName: "iOS User")
         
         return true
     }

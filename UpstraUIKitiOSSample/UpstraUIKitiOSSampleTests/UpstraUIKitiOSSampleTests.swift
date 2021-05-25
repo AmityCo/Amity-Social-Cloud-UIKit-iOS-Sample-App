@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import UpstraUIKitiOSSample
+@testable import AmityUIKitiOSSample
 
 class UpstraUIKitiOSSampleTests: XCTestCase {
 

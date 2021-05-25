@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import UpstraUIKit
+import AmityUIKit
 
 class SettingsViewController: UIViewController {
     
@@ -16,14 +16,14 @@ class SettingsViewController: UIViewController {
         case customPreset1
         case customPreset2
         
-        var theme: EkoTheme {
+        var theme: AmityTheme {
             switch self {
             case .defaultPreset:
-                return EkoTheme()
+                return AmityTheme()
             case .customPreset1:
-                return EkoTheme(primary: .brown, secondary: .black, alert: .red, highlight: .green, base: .gray, baseInverse: .white, messageBubble: .orange, messageBubbleInverse: .purple)
+                return AmityTheme(primary: .brown, secondary: .black, alert: .red, highlight: .green, base: .gray, baseInverse: .white, messageBubble: .orange, messageBubbleInverse: .purple)
             case .customPreset2:
-                return EkoTheme(primary: .systemBlue, secondary: .systemGray, alert: .systemRed, highlight: .systemGreen, base: .systemPink, baseInverse: .systemIndigo, messageBubble: .systemOrange, messageBubbleInverse: .systemTeal)
+                return AmityTheme(primary: .systemBlue, secondary: .systemGray, alert: .systemRed, highlight: .systemGreen, base: .systemPink, baseInverse: .systemIndigo, messageBubble: .systemOrange, messageBubbleInverse: .systemTeal)
             }
         }
     }
@@ -38,17 +38,17 @@ class SettingsViewController: UIViewController {
     
     @IBAction func defaultPresetTap(_ sender: Any) {
         let preset = Preset.defaultPreset
-        UpstraUIKitManager.set(theme: preset.theme)
+        AmityUIKitManager.set(theme: preset.theme)
     }
     
     @IBAction func customPreset1Tap(_ sender: Any) {
         let preset = Preset.customPreset1
-        UpstraUIKitManager.set(theme: preset.theme)
+        AmityUIKitManager.set(theme: preset.theme)
     }
     
     @IBAction func customPreset2Tap(_ sender: Any) {
         let preset = Preset.customPreset2
-        UpstraUIKitManager.set(theme: preset.theme)
+        AmityUIKitManager.set(theme: preset.theme)
     }
     
 }

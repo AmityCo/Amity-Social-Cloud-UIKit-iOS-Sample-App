@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import UpstraUIKit
+import AmityUIKit
 
-class CustomMessageTextIncomingTableViewCell: UITableViewCell, EkoMessageCellProtocol {
+class CustomMessageTextIncomingTableViewCell: UITableViewCell, AmityMessageCellProtocol {
 
     @IBOutlet private var displayText: UILabel!
     
@@ -18,7 +18,7 @@ class CustomMessageTextIncomingTableViewCell: UITableViewCell, EkoMessageCellPro
         // Initialization code
     }
     
-    func display(message: EkoMessageModel) {
+    func display(message: AmityMessageModel) {
         displayText.text = message.data?["text"] as? String
     }
     

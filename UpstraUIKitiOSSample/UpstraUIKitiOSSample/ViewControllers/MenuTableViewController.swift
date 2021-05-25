@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import EkoChat
-import UpstraUIKit
+import AmitySDK
+import AmityUIKit
 
 class MenuTableViewController: UITableViewController {
     

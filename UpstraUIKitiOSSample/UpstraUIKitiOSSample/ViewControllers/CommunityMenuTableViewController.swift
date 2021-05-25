@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import UpstraUIKit
+import AmityUIKit
 
 class CommunityMenuTableViewController: UITableViewController {
     
@@ -72,22 +72,22 @@ class CommunityMenuTableViewController: UITableViewController {
     }
     
     private func navigateToHome() {
-        let viewController = EkoCommunityHomePageViewController.make()
+        let viewController = AmityCommunityHomePageViewController.make()
         navigationController?.pushViewController(viewController, animated: true)
     }
     
     private func navigateToNewsFeed() {
-        let viewController = EkoNewsfeedViewController.make()
+        let viewController = AmityNewsfeedViewController.make()
         navigationController?.pushViewController(viewController, animated: true)
     }
     
     private func navigateToGlobalFeed() {
-        let viewController = EkoGlobalFeedViewController.make()
+        let viewController = AmityGlobalFeedViewController.make()
         navigationController?.pushViewController(viewController, animated: true)
     }
     
     private func navigateToMyFeed() {
-        let viewController = EkoUserFeedViewController.makeMyFeed()
+        let viewController = AmityUserFeedViewController.makeMyFeed()
         navigationController?.pushViewController(viewController, animated: true)
     }
     
