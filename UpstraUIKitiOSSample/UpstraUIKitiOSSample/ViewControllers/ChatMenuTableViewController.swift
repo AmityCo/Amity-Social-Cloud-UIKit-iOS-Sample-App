@@ -24,6 +24,8 @@ class ChatMenuTableViewController: UITableViewController {
                 return "Chat Home"
             case .chatList:
                 return "Chat List"
+            case .chatListComposeBarStyle:
+                return "Chat List with Compose Bar Style"
             case .chatListCustomize:
                 return "Chat List with customization"
             }
@@ -56,7 +58,7 @@ class ChatMenuTableViewController: UITableViewController {
         case .chatList:
             navigateToChatList()
         case .chatListComposeBarStyle:
-            navigateToChatListWithCustomization()
+            navigateToChatListWithComposeBarStyle()
         case .chatListCustomize:
             navigateToChatListWithCustomization()
         case .chatHome:
