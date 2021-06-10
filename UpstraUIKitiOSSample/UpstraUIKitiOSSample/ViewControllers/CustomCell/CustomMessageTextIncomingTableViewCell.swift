@@ -19,7 +19,10 @@ class CustomMessageTextIncomingTableViewCell: UITableViewCell, AmityMessageCellP
     }
     
     func display(message: AmityMessageModel) {
-        displayText.text = message.data?["text"] as? String
+        let messageContent = message.data?["text"] as? String ?? ""
+        let userDisplayname = message.object.user?.displayName ?? ""
+        
+        displayText.text = "[\(userDisplayname)]: \(messageContent)"
     }
     
 }

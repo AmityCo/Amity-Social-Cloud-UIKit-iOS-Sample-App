@@ -1,16 +1,16 @@
 PODS:
-  - AmityUIKit (2.0.2)
+  - AmityUIKit (2.0.3)
 
 DEPENDENCIES:
-  - AmityUIKit (= 2.0.2)
+  - AmityUIKit (= 2.0.3)
 
 SPEC REPOS:
   https://github.com/EkoCommunications/EkoMessagingSDKUIKit.git:
     - AmityUIKit
 
 SPEC CHECKSUMS:
-  AmityUIKit: cf18e38128eaec816403bc292e360987e200d65f
+  AmityUIKit: b2d5f063015a30a1e00c6f77dde6d13ff8f12427
 
-PODFILE CHECKSUM: bc987ab2686763656a7214282496e1911b6e48aa
+PODFILE CHECKSUM: 210c08591439f75895f0dfaf469f4b699f7b8903
 
 COCOAPODS: 1.10.1
