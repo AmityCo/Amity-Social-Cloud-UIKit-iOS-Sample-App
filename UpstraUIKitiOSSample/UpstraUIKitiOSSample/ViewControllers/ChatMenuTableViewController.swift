@@ -15,6 +15,7 @@ class ChatMenuTableViewController: UITableViewController {
     private enum Menu: CaseIterable {
         case chatHome
         case chatList
+        case chatListComposeBarStyle
         case chatListCustomize
         
         var title: String {
@@ -54,6 +55,8 @@ class ChatMenuTableViewController: UITableViewController {
         switch items(at: indexPath) {
         case .chatList:
             navigateToChatList()
+        case .chatListComposeBarStyle:
+            navigateToChatListWithCustomization()
         case .chatListCustomize:
             navigateToChatListWithCustomization()
         case .chatHome:
@@ -74,6 +77,15 @@ class ChatMenuTableViewController: UITableViewController {
     
     private func navigateToChatList() {
         let viewController = AmityMessageListViewController.make(channelId: "android-iOS-conversation")
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    private func navigateToChatListWithComposeBarStyle() {
+        var settings = AmityMessageListViewController.Settings()
+        settings.composeBarStyle = .textOnly
+        // With custom settings
+        let viewController = AmityMessageListViewController.make(channelId: "android-iOS-conversation", settings: settings)
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
