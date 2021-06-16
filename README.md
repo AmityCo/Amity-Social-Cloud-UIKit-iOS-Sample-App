@@ -1,6 +1,6 @@
-# UpstraUIKitiOSSample
+# Amity Social Cloud UIKit iOS Sample App
 
-Welcome to UpstraUIKitiOSSample repository. This will provide you how to integrate [UpstraUIKit](https://github.com/EkoCommunications/EkoMessagingSDKUIKit) to your own project.
+Welcome to Amity Social Cloud UIKit iOS Sample App repository. This will provide you how to integrate [ASC UIKit](https://github.com/AmityCo/Amity-Social-Cloud-UIKit-iOS-Sample-App) to your own project.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ Welcome to UpstraUIKitiOSSample repository. This will provide you how to integra
 2. Clone this repository.
 3. Run `pod install` after cloned this repo to install dependencies or `pod install --repo-update` in case to update current dependencies.
 
-*For carthage, please follow [this](https://app.gitbook.com/@eko/s/sdk/uikit/uikit/get-started) instruction.*
+*For carthage, please follow [this](https://docs.amity.co/uikit/ios/getting-started#install-the-sdk) instruction.*
 
 ## Usage
 For an iOS application, set up and authentication should be done in the AppDelegate.
@@ -27,7 +27,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 ```
-
-## Libraries
-
-- [UpstraUIKit](https://github.com/EkoCommunications/EkoMessagingSDKUIKit)
