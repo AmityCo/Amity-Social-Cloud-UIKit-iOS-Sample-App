@@ -1,6 +1,6 @@
 # Amity Social Cloud UIKit iOS Sample App
 
-Welcome to Amity Social Cloud UIKit iOS Sample App repository. This will provide you how to integrate [ASC UIKit](https://github.com/AmityCo/Amity-Social-Cloud-UIKit-iOS-Sample-App) to your own project.
+Welcome to Amity Social Cloud UIKit iOS Sample App repository. This will provide you how to integrate [ASC UIKit](https://docs.amity.co/uikit/ios/overview) to your own project.
 
 ## Getting Started
 
