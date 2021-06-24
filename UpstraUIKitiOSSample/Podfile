@@ -7,7 +7,7 @@ target 'UpstraUIKitiOSSample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'AmityUIKit', '2.0.3'
+  pod 'AmityUIKit', '2.0.4'
 
   # Pods for UpstraUIKitiOSSample
 
