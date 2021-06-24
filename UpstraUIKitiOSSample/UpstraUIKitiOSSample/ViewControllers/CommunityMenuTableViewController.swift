@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AmitySDK
 import AmityUIKit
 
 class CommunityMenuTableViewController: UITableViewController {
@@ -16,6 +17,7 @@ class CommunityMenuTableViewController: UITableViewController {
         case newsfeed
         case globalFeed
         case myFeed
+        case postCreator
         
         var title: String {
             switch self {
@@ -27,9 +29,16 @@ class CommunityMenuTableViewController: UITableViewController {
                 return "Global Feed"
             case .myFeed:
                 return "My Feed"
+            case .postCreator:
+                return "Post Creator"
             }
         }
     }
+    
+    // MARK: - Properties
+        
+    private let communityRepo = AmityCommunityRepository(client: AmityUIKitManager.client)
+    private var communityToken: AmityNotificationToken?
     
     // MARK: - View's life cycle
     
@@ -62,6 +71,8 @@ class CommunityMenuTableViewController: UITableViewController {
             navigateToGlobalFeed()
         case .myFeed:
             navigateToMyFeed()
+        case .postCreator:
+            navigateToPostCreator()
         }
     }
     
@@ -87,8 +98,24 @@ class CommunityMenuTableViewController: UITableViewController {
     }
     
     private func navigateToMyFeed() {
-        let viewController = AmityUserFeedViewController.makeMyFeed()
+        let viewController = AmityMyFeedViewController.make()
         navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    private func navigateToPostCreator() {
+        
+        // get the first post sorted by displayname
+        communityToken = communityRepo
+            .getCommunities(displayName: nil, filter: .userIsMember, sortBy: .displayName, categoryId: nil, includeDeleted: false)
+            .observe { [weak self] (collection, _, _) in
+                if collection.count() > 0,
+                   let object = collection.object(at: 0) {
+                    
+                    // open post creator for community
+                    let viewController = AmityPostCreatorViewController.make(postTarget: .community(object: object))
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }
+            }
     }
     
 }
