@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AmityUIKitManager.setup("b3babb5e32dbf2314935d81e0301438fd85b84b7b2316a2e")
         AmityUIKitManager.registerDevice(withUserId: "ios0000", displayName: "iOS User")
         
+        // custom event
+        AmityUIKitManager.set(eventHandler: CustomEventHandler())
+        
         return true
     }
 

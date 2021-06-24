@@ -11,6 +11,7 @@
 		1F21D97912106D49F0E2D414 /* Pods_UpstraUIKitiOSSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFACD29301321317D7F5A73 /* Pods_UpstraUIKitiOSSample.framework */; };
 		72245FC2255D786A00548CB2 /* CommunityMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72245FC1255D786A00548CB2 /* CommunityMenuTableViewController.swift */; };
 		72245FC4255D788500548CB2 /* ChatMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72245FC3255D788500548CB2 /* ChatMenuTableViewController.swift */; };
+		7241CF652681F809007F3298 /* CustomEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7241CF642681F809007F3298 /* CustomEventHandler.swift */; };
 		7297F9F125073109002D03F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7297F9F025073109002D03F0 /* AppDelegate.swift */; };
 		7297F9F325073109002D03F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7297F9F225073109002D03F0 /* SceneDelegate.swift */; };
 		7297F9F825073109002D03F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7297F9F625073109002D03F0 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		717CAC3318DB22833F16869A /* Pods-UpstraUIKitiOSSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpstraUIKitiOSSample.release.xcconfig"; path = "Target Support Files/Pods-UpstraUIKitiOSSample/Pods-UpstraUIKitiOSSample.release.xcconfig"; sourceTree = "<group>"; };
 		72245FC1255D786A00548CB2 /* CommunityMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMenuTableViewController.swift; sourceTree = "<group>"; };
 		72245FC3255D788500548CB2 /* ChatMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMenuTableViewController.swift; sourceTree = "<group>"; };
+		7241CF642681F809007F3298 /* CustomEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEventHandler.swift; sourceTree = "<group>"; };
 		7297F9ED25073109002D03F0 /* UpstraUIKitiOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpstraUIKitiOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7297F9F025073109002D03F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7297F9F225073109002D03F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				7297F9F025073109002D03F0 /* AppDelegate.swift */,
+				7241CF642681F809007F3298 /* CustomEventHandler.swift */,
 				7297F9F225073109002D03F0 /* SceneDelegate.swift */,
 				7297F9F92507310B002D03F0 /* Assets.xcassets */,
 				7297F9FB2507310B002D03F0 /* LaunchScreen.storyboard */,
@@ -445,6 +448,7 @@
 				7297F9F125073109002D03F0 /* AppDelegate.swift in Sources */,
 				72245FC2255D786A00548CB2 /* CommunityMenuTableViewController.swift in Sources */,
 				7297F9F325073109002D03F0 /* SceneDelegate.swift in Sources */,
+				7241CF652681F809007F3298 /* CustomEventHandler.swift in Sources */,
 				72DA0A2C2507363100BE8108 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
