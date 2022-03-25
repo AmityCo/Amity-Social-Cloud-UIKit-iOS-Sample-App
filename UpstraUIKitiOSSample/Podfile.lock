@@ -1,16 +1,22 @@
 PODS:
-  - AmityUIKit (2.0.4)
+  - AmityUIKit (2.13.0):
+    - Realm (~> 10.21.1)
+  - Realm (10.21.1):
+    - Realm/Headers (= 10.21.1)
+  - Realm/Headers (10.21.1)
 
 DEPENDENCIES:
-  - AmityUIKit (= 2.0.4)
+  - AmityUIKit
 
 SPEC REPOS:
-  https://github.com/EkoCommunications/EkoMessagingSDKUIKit.git:
+  trunk:
     - AmityUIKit
+    - Realm
 
 SPEC CHECKSUMS:
-  AmityUIKit: 6c15196eb37495a39e5b3fa8430138e34c3b08bc
+  AmityUIKit: c0c1829fa1a52bad7000a9461830d9c5741cf27b
+  Realm: 44b41c3ae39e3ecfded71a04434bfde066c7b317
 
-PODFILE CHECKSUM: 318aec490a0ae8d9222d01c68f9f0aa09673b6fc
+PODFILE CHECKSUM: a278b2a82e81f9b2ed95551d73a6414ee3edd866
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2
