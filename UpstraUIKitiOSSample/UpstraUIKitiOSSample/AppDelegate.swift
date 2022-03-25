@@ -13,11 +13,22 @@ import AmityUIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        AmityUIKitManager.setup("b3babb5e32dbf2314935d81e0301438fd85b84b7b2316a2e")
-        AmityUIKitManager.registerDevice(withUserId: "ios0000", displayName: "iOS User")
         
-        // custom event
-        AmityUIKitManager.set(eventHandler: CustomEventHandler())
+        
+        if let infoPlistPath = Bundle.main.url(forResource: "Amity-Info", withExtension: "plist"),
+           let infoPlistData = try? Data(contentsOf: infoPlistPath),
+           let dict = try? PropertyListSerialization.propertyList(from: infoPlistData, options: [], format: nil) as? [String: Any],
+           let apiKey = dict["AmityAPIKey"] as? String {
+            
+            // setup apikey and register device
+            AmityUIKitManager.setup(apiKey: apiKey)
+            AmityUIKitManager.registerDevice(withUserId: "ios0000", displayName: "iOS User") { success, error in
+                print("[AmityUIKit] Login \(success ? "successfully" : "failed") \(error?.localizedDescription ?? "")")
+            }
+            
+            // custom event
+            AmityUIKitManager.set(eventHandler: CustomEventHandler())
+        }
         
         return true
     }

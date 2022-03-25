@@ -12,6 +12,7 @@
 		72245FC2255D786A00548CB2 /* CommunityMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72245FC1255D786A00548CB2 /* CommunityMenuTableViewController.swift */; };
 		72245FC4255D788500548CB2 /* ChatMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72245FC3255D788500548CB2 /* ChatMenuTableViewController.swift */; };
 		7241CF652681F809007F3298 /* CustomEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7241CF642681F809007F3298 /* CustomEventHandler.swift */; };
+		7265933527EDBD9D00CAD63B /* Amity-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7265933427EDBD9D00CAD63B /* Amity-Info.plist */; };
 		7297F9F125073109002D03F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7297F9F025073109002D03F0 /* AppDelegate.swift */; };
 		7297F9F325073109002D03F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7297F9F225073109002D03F0 /* SceneDelegate.swift */; };
 		7297F9F825073109002D03F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7297F9F625073109002D03F0 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		72245FC1255D786A00548CB2 /* CommunityMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMenuTableViewController.swift; sourceTree = "<group>"; };
 		72245FC3255D788500548CB2 /* ChatMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMenuTableViewController.swift; sourceTree = "<group>"; };
 		7241CF642681F809007F3298 /* CustomEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEventHandler.swift; sourceTree = "<group>"; };
+		7265933427EDBD9D00CAD63B /* Amity-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Amity-Info.plist"; sourceTree = "<group>"; };
 		7297F9ED25073109002D03F0 /* UpstraUIKitiOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpstraUIKitiOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7297F9F025073109002D03F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7297F9F225073109002D03F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				7297F9FB2507310B002D03F0 /* LaunchScreen.storyboard */,
 				7297F9F625073109002D03F0 /* Main.storyboard */,
 				7297F9FE2507310B002D03F0 /* Info.plist */,
+				7265933427EDBD9D00CAD63B /* Amity-Info.plist */,
 				72DA0A2D250738BC00BE8108 /* ViewControllers */,
 			);
 			path = UpstraUIKitiOSSample;
@@ -312,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7297F9FD2507310B002D03F0 /* LaunchScreen.storyboard in Resources */,
+				7265933527EDBD9D00CAD63B /* Amity-Info.plist in Resources */,
 				7297F9FA2507310B002D03F0 /* Assets.xcassets in Resources */,
 				7297F9F825073109002D03F0 /* Main.storyboard in Resources */,
 				B7CFA708256BBE450015D674 /* CustomMessageTextIncomingTableViewCell.xib in Resources */,

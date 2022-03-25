@@ -10,7 +10,7 @@ import AmityUIKit
 
 class CustomEventHandler: AmityEventHandler {
     
-    override func channelDidTap(from source: AmityViewController, channelId: String) {
+    override func communityChannelDidTap(from source: AmityViewController, channelId: String) {
         print("\(channelId)")
     }
     
